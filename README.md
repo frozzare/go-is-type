@@ -1,4 +1,4 @@
-# go-is [![Build Status](https://travis-ci.org/frozzare/go-is-type.svg?branch=master)](https://travis-ci.org/frozzare/go-is-type)
+# go-is-type [![Build Status](https://travis-ci.org/frozzare/go-is-type.svg?branch=master)](https://travis-ci.org/frozzare/go-is-type)
 
 Simple type checking.
 
