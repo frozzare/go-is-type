@@ -1,11 +1,14 @@
 package is
 
-import "bytes"
-import "github.com/bmizerany/assert"
-import "testing"
-import "time"
-import "regexp"
-import "unsafe"
+import (
+	"bytes"
+	"regexp"
+	"testing"
+	"time"
+	"unsafe"
+
+	"github.com/frozzare/go-assert"
+)
 
 func TestArray(t *testing.T) {
 	assert.Equal(t, Array([...]int{1, 2, 3}), true)
@@ -132,7 +135,7 @@ func TestInterface(t *testing.T) {
 }
 
 func TestMap(t *testing.T) {
-	var names map[string]int = make(map[string]int)
+	names := map[string]int{}
 	assert.Equal(t, Map(names), true)
 	assert.Equal(t, Map(false), false)
 	assert.Equal(t, Map([...]int{1, 2, 3}), false)
